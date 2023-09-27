@@ -1,8 +1,7 @@
 ﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
 using System;
-using Tyuiu.SalminKN.Sprint1.Task2.V0.Lib;
-
-namespace Tyuiu.SalminKN.Sprint1.Task2.V0.Test
+using Tyuiu.SalminKN.Sprint1.Task2.V6.Lib;
+namespace Tyuiu.SalminKN.Sprint1.Task2.V6.Test
 {
     [TestClass]
     public class DataServiceTest
@@ -11,8 +10,10 @@ namespace Tyuiu.SalminKN.Sprint1.Task2.V0.Test
         public void TestMethod1()
         {
             DataService ds = new DataService();
-            
-            Assert.AreEqual(4, res);
+            int metr = 120000;
+            int res = Convert.ToInt32(ds.ConvertMToKm(metr));
+            Assert.AreEqual(120, res);
+
         }
     }
 }
