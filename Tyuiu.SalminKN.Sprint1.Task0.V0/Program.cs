@@ -10,16 +10,19 @@ namespace Tyuiu.SalminKN.Sprint1.Task0.V0
     class Program
     {
         static void Main(string[] args)
+
         {
-            int a = 6, b = 4;
 
-            int x = 30 / 6 + 4;
+            int a = 0, b = 0;
 
-            a++;
+            a = Convert.ToInt32(Console.ReadLine());
 
-            x += b += a;
-            Console.WriteLine(x);
-            Console.ReadKey();
+            b = Convert.ToInt32(Console.ReadLine());
+
+            int d = 2 * a - b;
+
+            Console.WriteLine("{0}", a);
+            Console.ReadLine();
         }
     }
 }
