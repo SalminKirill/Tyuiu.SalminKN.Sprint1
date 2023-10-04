@@ -11,7 +11,12 @@ namespace Tyuiu.SalminKN.Sprint1.TaskPreview.V21.Lib
         public double Calculate(double x, double y)
         {
             double res;
-            res = (Math.Pow(x, y) / (Math.Cos(x) - x / 3) + (Math.Sin(Math.Pow(x, 2)) + (Math.Cos(y))) / (Math.Cos(x) - Math.Sin(y)) * Math.Tan(x * y));
+            double res1 = Math.Pow(y, x) / (Math.Cos(x) - (x / 3));
+            double res2 = (Math.Sin(Math.Pow(x, 2)) + Math.Cos(y)) / (Math.Cos(x) - Math.Sin(y));
+            double res33 = x * y;
+            double res3 = Math.Tan(res33);
+            res = res1 + res2 * res3;
+            //res = (Math.Pow(y, x) / (Math.Cos(x) - x / 3) + (Math.Sin(Math.Pow(x, 2)) + (Math.Cos(y))) / (Math.Cos(x) - Math.Sin(y)) * Math.Tan(x * y));
             return res;
         }
     }
