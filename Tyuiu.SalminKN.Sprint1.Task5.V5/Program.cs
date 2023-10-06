@@ -3,16 +3,38 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-
+using Tyuiu.SalminKN.Sprint1.Task5.V5.Lib;
 namespace Tyuiu.SalminKN.Sprint1.Task5.V5
 {
     class Program
     {
         static void Main(string[] args)
         {
-            double a = 32.578;
-            int b = Convert.ToInt32(a);
-            Console.WriteLine(Convert.ToDouble(a-b));
+            DataService ds = new DataService();
+
+            Console.Title = "Спринт #1 | Выполнил: Салмин К. Н. | АСОиУБ-23-1";
+            Console.WriteLine("************************************************************************");
+            Console.WriteLine("* Спринт #1                                                            *");
+            Console.WriteLine("* Тема: Преобразование типов и класс Convert                           *");
+            Console.WriteLine("* Задание #5                                                           *");
+            Console.WriteLine("* Вариант #5                                                           *");
+            Console.WriteLine("* Выполнил: Салмин Кирилл Николаевич | АСОиУБ-23-1                     *");
+            Console.WriteLine("************************************************************************");
+            Console.WriteLine("* ЗАДАНИЕ:                                                             *");
+            Console.WriteLine("************************************************************************");
+            Console.WriteLine("* Присвоить целой переменной d первую цифру из дробной части           *" +
+                              "* положительного вещественного числа x.                                *");
+            Console.WriteLine("************************************************************************");
+
+
+            Console.Write("Введите значение х:");
+            double a = Convert.ToDouble(Console.ReadLine());
+            double res = ds.Calculate(a);
+            Console.WriteLine("************************************************************************");
+            Console.WriteLine("* РЕЗУЛЬТАТ:                                                           *");
+            Console.WriteLine("************************************************************************");
+            Console.WriteLine($"*{res}                                                                     *");
+            Console.WriteLine("************************************************************************");
             Console.ReadKey();
         }
     }
