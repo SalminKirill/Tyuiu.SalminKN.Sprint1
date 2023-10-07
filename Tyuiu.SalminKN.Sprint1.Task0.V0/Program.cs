@@ -13,15 +13,17 @@ namespace Tyuiu.SalminKN.Sprint1.Task0.V0
 
         {
 
-            int a = 0, b = 0;
+            int y = 0, x = 0;
 
-            a = Convert.ToInt32(Console.ReadLine());
+            x = Convert.ToInt32(Console.ReadLine());
 
-            b = Convert.ToInt32(Console.ReadLine());
+            y = x + 1;
 
-            int d = 2 * a - b;
+            Console.WriteLine(x * x);
+            Console.ReadLine();
+            return;
 
-            Console.WriteLine("{0}", a);
+            Console.WriteLine(y);
             Console.ReadLine();
         }
     }
